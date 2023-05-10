@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/msgl">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+
+        android:src="@drawable/user"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp" />
+
+    <TextView
+        android:id="@+id/txtMessages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_toRightOf="@+id/profile_image"
+        android:background="@drawable/receiver_shape"
+        android:visibility="gone"
+        android:padding="@dimen/_7sdp"
+        android:text="INSIEN"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+       />
+
+    <ImageView
+        android:id="@+id/msgimg"
+        android:layout_width="160dp"
+        android:layout_height="200dp"
+        android:adjustViewBounds="true"
+        android:padding="15dp"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="50dp"
+        app:srcCompat="@android:drawable/ic_menu_gallery"
+       />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtMessages"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/feeling"
+        android:layout_width="20dp"
+        android:layout_height="17dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+</RelativeLayout>

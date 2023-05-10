@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/search"
+        android:title=""
+        android:icon="@drawable/more_vert"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/save"
+                android:icon="@drawable/save"
+                app:showAsAction="ifRoom"
+                android:title="Save" />
+            <item
+                android:id="@+id/crop"
+                android:title="Edit"
+                android:icon="@drawable/edit"
+                app:showAsAction="ifRoom"/>
+
+            <item
+                android:id="@+id/share"
+                android:icon="@drawable/share"
+                android:title="Share"
+                app:showAsAction="ifRoom"/>
+            <item
+            android:id="@+id/Setimg"
+            android:title="Set as" >
+                <menu>
+                <item
+                    android:id="@+id/prof"
+                    android:title="Profile Image"
+                    android:icon="@drawable/profileshort"
+                    app:showAsAction="ifRoom"
+                    />
+                <item
+                    android:id="@+id/chatbg"
+                    android:title="Chat Background"
+                    android:icon="@drawable/wallpaper"
+                    app:showAsAction="ifRoom"/>
+
+                </menu>
+            </item>
+            <item
+                android:id="@+id/fragment"
+                android:icon="@drawable/share"
+                android:title="Fragment"
+                app:showAsAction="ifRoom"/>
+
+        </menu>
+
+    </item>
+
+
+</menu>

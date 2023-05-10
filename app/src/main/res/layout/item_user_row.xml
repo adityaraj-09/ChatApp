@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_item">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_img"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="13dp"
+            android:src="@drawable/user"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+        <com.devlomi.circularstatusview.CircularStatusView
+            android:id="@+id/circular_status_view"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="-52.5dp"
+            android:layout_marginTop="13dp"
+            app:portion_color="#40744D"
+            app:portion_spacing="4dp"
+            app:portion_width="4dp"
+            app:portions_count="10"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/chatl"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="200dp"
+                android:layout_height="25dp"
+                android:fontFamily="@font/aclonica"
+                android:text="Name"
+                android:theme="@style/textViewColor"
+                android:textSize="@dimen/_15sdp" />
+
+            <TextView
+                android:id="@+id/user_status"
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:text="Status"
+                android:theme="@style/textViewColor" />
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

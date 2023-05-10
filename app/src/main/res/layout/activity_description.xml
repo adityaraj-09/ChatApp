@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context=".DescriptionActivity">
+
+    <LinearLayout
+        android:layout_width="70dp"
+        android:layout_height="130dp"
+        android:layout_below="@+id/ll1"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-65dp"
+        android:background="#40744D">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@drawable/des_top"
+        android:backgroundTint="#F6F6F6"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="270dp"
+            android:layout_height="270dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/chatill" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll1"
+        android:background="@drawable/descr"
+        android:backgroundTint="#40744D"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="Let's connect with each other"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="A message is a discrete communication intended by the source consumption"
+            android:textColor="#C3BFBF"
+            android:textSize="@dimen/_14sdp" />
+
+        <TextView
+            android:id="@+id/start"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/btn_login"
+            android:backgroundTint="#65E184"
+            android:gravity="center"
+            android:text="Let's Start"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18sdp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ImageViewerActivity"
+    android:background="@color/black">
+
+    <ImageView
+        android:id="@+id/view_img"
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_weight="1"
+        tools:srcCompat="@tools:sample/avatars" />
+</LinearLayout>
